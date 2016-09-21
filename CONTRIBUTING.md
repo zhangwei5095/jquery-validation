@@ -11,6 +11,7 @@ Documentation issues are also tracked at the [jQuery Validation](https://github.
 Pull Requests to improve the docs are welcome at the [jQuery Validation docs](https://github.com/jzaefferer/validation-content) repository, though.
 
 **IMPORTANT NOTE ABOUT EMAIL VALIDATION**. As of version 1.12.0 this plugin is using the same regular expression that the [HTML5 specification suggests for browsers to use](https://html.spec.whatwg.org/multipage/forms.html#valid-e-mail-address). We will follow their lead and use the same check. If you think the specification is wrong, please report the issue to them. If you have different requirements, consider [using a custom method](http://jqueryvalidation.org/jQuery.validator.addMethod/).
+In case you need to adjust the built-in validation regular expression patterns, please [follow the documentation](http://jqueryvalidation.org/jQuery.validator.methods/).
 
 ## Contributing code
 
@@ -40,7 +41,8 @@ If you've wrote custom methods that you'd like to contribute to additional-metho
 
 ## Unit Tests
 
-To run unit tests, you should have a local webserver installed and pointing at your workspace. Then open `http://localhost/jquery-validation/test` to run the unit tests. Start with one browser while developing the fix, then run against others before committing. Usually latest Chrome, Firefox, Safari and Opera and a few IEs.
+To run unit tests, just open `test/index.html` within your browser. Make sure you ran `npm install` before so all required dependencies are available.
+Start with one browser while developing the fix, then run against others before committing. Usually latest Chrome, Firefox, Safari and Opera and a few IEs.
 
 ## Documentation
 
